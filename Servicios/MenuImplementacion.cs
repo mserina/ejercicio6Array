@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace ejercicio6ArrayObligatorio.Servicios
 {
+    /// <summary>
+    /// Metodo que desarrolla la logica de los metodos del menu
+    /// msm - 150124
+    /// </summary>
     internal class MenuImplementacion : MenuInterfaz
     {
         public int mostrarMenuYRespuesta()

@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 
 namespace ejercicio6ArrayObligatorio.Servicios
 {
+    /// <summary>
+    /// Metodo que desarrolla la logica de los metodos del operacion
+    /// msm - 150124
+    /// </summary>
     internal class OperacionImplementacion : OperacionInterfaz
     {
 
@@ -52,7 +56,21 @@ namespace ejercicio6ArrayObligatorio.Servicios
                     Console.WriteLine(item.ToString());
                 }
 
-
+                Console.WriteLine(" ");
+                Console.WriteLine("LISTA ORDENADO");
+                for (int i = 0; i < listaClientes.Count -1; i++)
+                {
+                    for (int j = 0; j < listaClientes.Count -1 -i; j++)
+                    {
+                        //OJO: hay que poner el campo que queremos comparar
+                        if (listaClientes[j].Edad > listaClientes[j + 1].Edad)
+                        {
+                            int aux = listaClientes[j].Edad;
+                            listaClientes[j].Edad = listaClientes[j + 1].Edad;
+                            listaClientes[j + 1].Edad = aux;
+                        }
+                    }
+                }
 
             }
             else

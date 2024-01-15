@@ -48,6 +48,10 @@ namespace ejercicio6ArrayObligatorio
                         break;
                     case 2:
                         op.verificarClientesMinimos(listaClientes);
+                        foreach (var item in listaClientes)
+                        {
+                            Console.WriteLine(item);
+                        }
                         break;
                 }
             }
